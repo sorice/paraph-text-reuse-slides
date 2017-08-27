@@ -1,0 +1,2745 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Semantic Relation Analysis
+\begin_inset Newline newline
+\end_inset
+
+for Paraphrase Plagiarism Detection 
+\begin_inset Newline newline
+\end_inset
+
+on Computing Scientific Texts in Spanish 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Paraphrase Text Reuse Detection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+Paraphrased Text Reuse Detection in Spanish Computing Monolingual Corpora
+\end_layout
+
+\begin_layout Author
+Meneses-Abad,
+\begin_inset space ~
+\end_inset
+
+Abel
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Madera,
+\begin_inset space ~
+\end_inset
+
+Julio
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Barron-Cedeño,
+\begin_inset space ~
+\end_inset
+
+Alberto
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Meneses-Abad,
+\begin_inset space ~
+\end_inset
+
+Abel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Center for Studies on Informatics at UCLV 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Mathematical Dept.
+ at UC 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+
+QCRI
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Universidad de Camagüey
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, but mostly needed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Regular Presentation, 2017
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+PhD 2017
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, should be abbreviation of conference name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+About the speaker
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+10 Years in FreeSoftware, 5 Years in NLP with Python
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Ing.
+ Telecomunicaciones y Electrónica, CUJAE, 2004.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Miembro Grupo Técnico Nacional de SWL 2005 - 2009.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Pte.
+ Científico IV Taller Internacional de SWL, Informática 2009.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Miembro del GUTL del 2009 - a la actualidad.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Uno de los autores de la Guía Cubana de Migración a SWL de Cuba.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Jefe del Grupo que logró la migración del 40% de la UCI, de 2005 - 2009.
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Proyectos libres cubanos: SistClon, Infodrez, Sunshine, Shakespeare, QtNLP...
+\end_layout
+
+\begin_layout Itemize
+
+\size footnotesize
+Desde 2012 realiza su Dr.C.
+ de la Computación, en PLN, Detección de Plagio.
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Graphics
+	filename imgs/abel.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What's it all about?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Plagiarism Detection Roadmap
+\end_layout
+
+\begin_layout Subsection
+The Basic Problem of Plagiarism Detection
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+The Plagiarism Problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What is plagiarism?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Digital Plagiarism Detection Lingeries
+\end_layout
+
+\begin_layout Itemize
+“The act of taking the writings of another person and passing them off as
+ one’s own, generally in violation of copyright laws.” 
+\end_layout
+
+\begin_layout Itemize
+Source code plagiarism has been studied before the '80s.
+ 
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parker1989"
+
+\end_inset
+
+
+\series default
+\shape default
+ Internet & Copyleft upgraded that problem!
+\end_layout
+
+\begin_layout Itemize
+Natural languague texts, that represent 85% of Internet available texts,
+ are the most plagiarised archieves nowadays.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hace falta referencia aquí
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Jon Barrie, founder of Turnitin.com, says that a third of their papers(40
+ million) have significant levels of plagiarism.
+\end_layout
+
+\begin_layout Itemize
+Some reports suggest that there are more copyright violations among computer
+ science students than in any other academic discipline.
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barrie2010"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Paraphrase Plagiarism Recognition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+An open issue in computer science?
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Examples
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+Copy & Paste Plagiarism.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color blue
+Paraphrase Plagiarism
+\series default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+Missing citation.
+\begin_inset Newline newline
+\end_inset
+
+Data fabrication.
+\begin_inset Newline newline
+\end_inset
+
+Idea Plagiarism.
+\end_layout
+
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+Interest domain of
+\begin_inset Newline newline
+\end_inset
+
+the investigation:
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color blue
+Paraphrase Plagiarism.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align block
+\begin_inset VSpace defskip*
+\end_inset
+
+
+\series bold
+\shape italic
+\size small
+\color black
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "El2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Imran2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vila2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kakkonen2010"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lukashenko2007"
+
+\end_inset
+
+ 
+\series default
+\shape default
+\size default
+are agree with some of this categories.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\color white
+PAN, the biggest world plagiarism detection competition
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Paraphrase Plagiarism Recognition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+An open issue in computer science?
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Examples
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+Copy & Paste Plagiarism.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color blue
+Paraphrase Plagiarism
+\series default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+Missing citation.
+\begin_inset Newline newline
+\end_inset
+
+Data fabrication.
+\begin_inset Newline newline
+\end_inset
+
+Idea Plagiarism.
+\end_layout
+
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+Interest domain of
+\begin_inset Newline newline
+\end_inset
+
+the investigation:
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\color blue
+Paraphrase Plagiarism.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align block
+\begin_inset VSpace defskip*
+\end_inset
+
+It takes into account the existent semantic relations between synonyms,
+ antonyms, polysemic words, etc.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+PAN, the biggest world plagiarism detection competition shows that 
+\series default
+\shape italic
+recall
+\series bold
+\shape default
+ must improve in paraphrase.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+2011 PAN statistics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Results of plagiarism methods competition by types
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Non-paraphrase plagiarism
+\series default
+ detection methods are 
+\series bold
+over 80%
+\series default
+ in the majority of cases.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size small
+Recall of Web Paraphrase Plagiarism Detection, by authors.
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barron-Cedeno2012"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2011_D_recall-non_paraphrase_plagiarism_detection_results.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2011_B_recall-auto-low_paraphrase_plagiarism_detection_results.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2011_A_recall-manual_paraphrase_plagiarism_detection_results.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Other types
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Auto-Low
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Manual
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Recall
+\shape default
+ in Auto-High paraphrase plagiarism detection is under 0.1.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Paraphrase plagiarism
+\series default
+ detection overall is 
+\series bold
+less
+\series default
+ than 
+\series bold
+40%
+\series default
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+2014 PAN statistics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Results of plagiarism methods competition by types
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Non-paraphrase plagiarism
+\series default
+ detection methods are 
+\series bold
+over 80%
+\series default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sanchez-perez2014"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size small
+Recall of Web Paraphrase Plagiarism Detection, by authors.
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barron-Cedeno2012"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2014_all.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2014_Random.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/PAN_2014_Summary.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Other types
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Random
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Summary
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Recall
+\shape default
+ in paraphrase plagiarism detection is over 0.5% only in simulated cases
+\end_layout
+
+\begin_layout Standard
+Real paraphrase plagiarism detection overall is 
+\series bold
+less
+\series default
+ than 
+\series bold
+20%
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+The gap still open in English! Spanish corpus missing!
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Paraphrase Complexity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Learn the way to do it, then understand the difficulties to detect it.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+\size small
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barron-Cedeno2012a"
+
+\end_inset
+
+
+\series default
+\shape default
+ consider the following six paraphrase typologies:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Morphology - based changes:
+\series default
+\shape default
+ Inflections, modal verb & derivational changes.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Lexicon - based changes:
+\series default
+\shape default
+ Spelling, same polarity, synthetic & analitic sustitutions.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Syntax - based changes:
+\series default
+\shape default
+ Negation, ellipsis, etc.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Discourse - based changes:
+\series default
+\shape default
+ Punctuation & format changes, styles alternation, etc.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Miscellaneous - based changes:
+\series default
+\shape default
+ Discourse structures & order changes.
+ Addition & deletion.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Semantic - based changes:
+\series default
+\shape default
+ Imply a different lexicalisation of the same content unit.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\color white
+These typologies are closely related with 
+\begin_inset Quotes eld
+\end_inset
+
+Linguistic Semantic Relations
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Surveillance Plagiarism: Detection Systems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+There are two kinds of plagiarism detection systems: Hermetic and Web.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size scriptsize
+Summarized list from 
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kakkonen2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+WCopyfind
+\series default
+.
+ Hermetic detection system to compare natural languague texts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Sherlock
+\series default
+.
+ Hermetic detection system to compare natural languague and source code
+ texts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SeeSources.com
+\series default
+.
+ Web detection system that allows users to search the sources of a record
+ length(in words) or a file on the web.
+ It uses classic internet services like Google or Yahoo.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+TurnitIn
+\series default
+.
+ Hermetic & Web detection system.
+ It is the most used anti-plagiarism software, which produces a report about
+ a text, comparing it with documents comming from Internet and also its
+ own 40 million students papers database.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+But are they necessary in national academies?
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Slovak Republic Example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+The social dimension of plagiarism problem.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size scriptsize
+Summarized list from 
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Grman2011a"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Complex evaluation of thesis and dissertations of all 33 universities in
+ the Slovak Republic 
+\end_layout
+
+\begin_layout Itemize
+Language independent solution - documents in Slovak, Czech, Ukrainian, Hungarian
+ and English 
+\end_layout
+
+\begin_layout Itemize
+Approx.
+ 80 thousands of thesis and dissertations per year 
+\end_layout
+
+\begin_layout Itemize
+3.4 million documents from internet (06/2011) 
+\end_layout
+
+\begin_layout Itemize
+Core detection algorithm is now running on one server only (but parallel
+ processing available)
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Other Problems on Plagiarism Detection.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Some things are not plagiarism but affect it.
+\end_layout
+
+\begin_layout Itemize
+Natural languague evolution.
+\begin_inset Newline newline
+\end_inset
+
+Words with lexical function can get more meanings through the time, others
+ can just appear.
+ For example: google is nowadays an accepted verb, which means 
+\begin_inset Quotes eld
+\end_inset
+
+search on Google
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Copyleft copyright
+\begin_inset Newline newline
+\end_inset
+
+The copyright analysis must consider the copyleft detection due to the presence
+ - allowed and probable - of long fragments reused not considered plagiarism.
+\end_layout
+
+\begin_layout Itemize
+Common Knowledge
+\begin_inset Newline newline
+\end_inset
+
+Anything that is generally known to everyone.
+ Ej: 
+\begin_inset Quotes eld
+\end_inset
+
+Independence Day
+\begin_inset Quotes erd
+\end_inset
+
+ of a particular contry, or 
+\begin_inset Quotes eld
+\end_inset
+
+the saying goes
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Previous Works
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Plagiarism Detection Methods
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align right
+
+\size scriptsize
+Summarized list from 
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "El2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Grammar Based method.
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+Based on grammar, it uses string matching.
+ They are very effective only for copy-paste plagiarism.
+\end_layout
+
+\begin_layout Itemize
+Semantic Based method.
+\begin_inset Newline newline
+\end_inset
+
+Based on vector space model, it has low results for partially plagiarized
+ documents.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\color black
+Grammar Semantic hybrid method.
+\series default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+Based on specific index structures like tri-grams, n-grams, or hash-based
+ fingerprints.
+ They are suitable for modified texts by rewriting or switching words with
+ the same meaning.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Models on Grammar-Semantic hybrid methods
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Who detects better under which circumstances?
+\end_layout
+
+\begin_layout Itemize
+Phrase extraction & semantic analysis.
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+It uses the index coming from IR index, wordnet to detect synonyms, and
+ SCAM measure for detecting candidates.
+\series bold
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Anzelmi2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+n-grams model.
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+Based on word length secuence encoding, and uses a downstream vector-based
+ n-gram distance measure for candidate selection.
+\series bold
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Basile2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Models on Grammar-Semantic hybrid methods
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Who detects better under which circumstances?
+\end_layout
+
+\begin_layout Itemize
+Term Document Weight matrix & Minimum Weight Overlapping.
+\begin_inset Newline newline
+\end_inset
+
+It uses shingles pre-processing, and normalization technique, then uses
+ weights to model de TDW matrix, and finally filtering and MWO to detect
+ duplicate parts.
+\series bold
+\shape italic
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Das2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hash-based fingerprint model.
+\begin_inset Newline newline
+\end_inset
+
+It incorporates common text shingles in pre-selection, and fingerprints
+ for candidate retrieval.
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kasprzak2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Consulted Research Groups
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\noindent
+Some investigated: Slovak group SVOP Ltd, Gensim project Czech Republic
+ Masaryk University.
+\end_layout
+
+\begin_layout Itemize
+Less investigated: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Bauhaus-Universität Weimar's Group 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Linguistic Group Universitat Politècnica de València, 
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Others:
+\shape default
+ Linguistic Engineer UNAM / 
+\series bold
+European NLP Group
+\series default
+ / Spain NLP papers (SEPLN) / 
+\series bold
+Stanford NLP Group
+\series default
+ / other plagiarism works from India, China, Greece
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Future investigations: 
+\series bold
+Google NLP Group
+\series default
+ / Microsoft NLP Group
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insertar referencias a todos estos grupos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Plagiarism Detection Process
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Benno Stein
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Bauhaus-Universität Weimar Professor, Germany.
+ The most cited scientist in plagiarism investigation by the ACM.
+\end_layout
+
+\end_inset
+
+ defines that plagiarism detection process has three stages:
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stein2007"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+Heuristic retrieval of potential source documents:
+\series default
+\shape default
+ gives the subset 
+\begin_inset Formula $D^{*}\in D$
+\end_inset
+
+ such that 
+\begin_inset Formula $|D^{*}|\lll|D|$
+\end_inset
+
+,where 
+\begin_inset Formula $D$
+\end_inset
+
+ is a collection of reference documents.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+Exhaustive comparison of texts:
+\series default
+\shape default
+ compares the text 
+\shape italic
+
+\begin_inset Formula $d_{q}$
+\end_inset
+
+
+\shape default
+ & 
+\begin_inset Formula $d\in D^{*}$
+\end_inset
+
+identifying reused fragments and their potential sources.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+Knowledge - based post processing:
+\series default
+\shape default
+ this phase detects proper citation fragments, common knowledge, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Plagiarism Recognition Process
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Authorship diagram by Ph.
+ D.
+ candidate Abel Meneses Abad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename doc/Plagiarism_detection_phases.png
+	scale 65
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Our Possible Contribution
+\end_layout
+
+\begin_layout Subsection
+Hypothesis & Explanation
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+¿A qué nos enfrentamos?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Spanish semantic analysis doesn't appear on recent investigations.
+\end_layout
+
+\begin_layout Itemize
+La detección del plagio parafrástico es un tema muy actual en las ciencias
+ de la computación.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Actualmente un número creciente de artículos trata el tema del procesamiento
+ de textos y la detección del plagio parafrástico.
+\end_layout
+
+\begin_layout Itemize
+\noindent
+Existen pocos artículos que refieran resultados exhaustivos de la detección
+ de plagio monolingue para el idioma español.
+\end_layout
+
+\begin_layout Itemize
+Frecuentemente la reducción del problema en NLP se hace mediante la selección
+ de corpus temáticos.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ej.
+ procesamiento de textos médicos.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Semantic Relations in Paraphrase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+How can affect semantic relations paraphrase changes?
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\color black
+Our considerations from 
+\series bold
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barron-Cedeno2012a"
+
+\end_inset
+
+
+\series default
+\shape default
+ paraphrase typologies:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Morphology - based changes:
+\series default
+\shape default
+ Inflections, modal verb & derivational changes.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Lexicon - based changes:
+\series default
+\shape default
+ Spelling, 
+\color red
+same polarity
+\color inherit
+, synthetic & analitic sustitutions.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Syntax - based changes:
+\series default
+\shape default
+ 
+\color red
+Negation
+\color inherit
+, ellipsis, etc.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Discourse - based changes:
+\series default
+\shape default
+ Punctuation & format changes, 
+\color red
+styles alternation
+\color inherit
+, etc.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Miscellaneous - based changes:
+\series default
+\shape default
+ Discourse structures & order changes.
+ 
+\color red
+Addition
+\color inherit
+ & deletion.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\shape italic
+\size footnotesize
+Semantic - based changes:
+\series default
+\shape default
+ Imply a 
+\color red
+different lexicalisation of the same content unit.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\color black
+These typologies are closely related with 
+\begin_inset Quotes eld
+\end_inset
+
+Linguistic 
+\color red
+Semantic Relations
+\color black
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hypothesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Spanish semantic analysis can have a better performance.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align block
+La utilización de 
+\shape italic
+\color blue
+estructuras de datos
+\shape default
+\color inherit
+ y 
+\shape italic
+\color blue
+algoritmos de similitud
+\shape default
+\color inherit
+ novedosos que permitan guardar y recuperar las 
+\shape italic
+\color blue
+relaciones semánticas
+\shape default
+\color inherit
+ existentes en el 
+\shape italic
+\color blue
+idioma español
+\shape default
+\color inherit
+, podría mostrar mejores resultados en la detección de 
+\shape italic
+\color blue
+plagio parafrástico
+\shape default
+\color inherit
+, mejorando su eficiencia al introducir modificaciones en el contexto de
+ los 
+\shape italic
+\color blue
+textos científicos sobre computación
+\shape default
+\color inherit
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Explanation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\noindent
+La experimentación de soluciones basadas en modelos computacionales que
+ permitan conservar información sobre las relaciones semánticas, así como
+ su rediseño, optimización y escalabilidad en la detección de plagio parafrástic
+o en idioma español, es de vital importancia para mejorar el desarrollo
+ de los procesos de enseñanza, fundamentalmente en las universidades y centros
+ que generan y resguardan patrimonio documental creciente en el tiempo.
+ 
+\end_layout
+
+\begin_layout Itemize
+\noindent
+La realización de este proceso de forma manual es imposible, la existencia
+ de un proceso automático que permita mejorar la redacción y revisión de
+ los textos científicos constituye una ventaja para el mejoramiento de los
+ servicios documentales.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Basic Ideas for the Investigation
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Specific Objectives
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Investigation Roadmap & Milestones
+\end_layout
+
+\begin_layout Itemize
+Diseñar variantes de estructuras de datos y algoritmos que comprendan las
+ relaciones semánticas del idioma español, reutilizando ideas existentes
+ para otros lenguajes naturales.
+\end_layout
+
+\begin_layout Itemize
+Valorar estadísticamente los resultados de la aplicación de las estructuras
+ y algoritmos diseñados para la detección de plagio parafrástico comparándolos
+ con otros reportados en la literatura para idioma inglés y español.
+ 
+\end_layout
+
+\begin_layout Itemize
+Aplicar la mejor variante diseñada al procesamiento de textos científicos
+ de computación en español de las universidades de Camagüey y Granma mediante
+ el desarrollo de la plataforma Sunshine de Gestión Documental.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What kind of software is it involved? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Pretended practical goal: an hermetic plagiarism detection system.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+1-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\shape italic
+A solution like 
+\series bold
+\shape default
+\color black
+WCopyfind.
+\series default
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+Only an hermetic detection system that compares computing scientific texts
+ from essays databases of Cuban universities.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Identify paraphrase plagiarism on the web is not a purpose of this investigation.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Summary
+\end_layout
+
+\begin_layout Subsection*
+Spanish Plagiarism Detection is needed in Cuban education.
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cuba has had
+\color red
+ few works
+\color inherit
+ on this area of knowledge in the last years.
+\end_layout
+
+\begin_layout Itemize
+Plagiarism detection software 
+\color red
+are not optimized
+\color inherit
+ for environments with low hardware tech.
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+Spanish
+\color inherit
+ plagiarism detection 
+\color red
+is a rare topic
+\color inherit
+ on the actual NLP investigations.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Cuban Software Architecture for Text Mining Investigation
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Cuban educational technology urgently needs a plagiarism detection service.
+\end_layout
+
+\begin_layout Itemize
+Developping Sunshine 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A cuban project of Document Management System, that use a python toolkit
+ and resources.
+\end_layout
+
+\end_inset
+
+ 
+\color red
+can be created a solid background
+\color inherit
+ for this investigation and others related in Cuba.
+\end_layout
+
+\begin_layout Itemize
+By applying other Cuban doctoral results like clustering and EDA optimized
+ algorithms, it can be obtained 
+\color red
+a more original and complete solution
+\color inherit
+ for Cuban text mining investigations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+An outlook is always optional.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip0pt plus.5fill
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\color blue
+Outlook
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The integration of Spanish natural languague results of Cuban investigations
+ into digital Spanish dictionaries & thesaurus has never been done.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+For Further Reading
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+For Further Reading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "library"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
