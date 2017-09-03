@@ -33,6 +33,21 @@ ________________________
 
 ---
 
+## What is all about?
+
+- The problem of Plagiarism
+- Text Reuse Detection (TRD). Paraphrased cases.
+- TRD Detailed Analysis Phase. Similarity distances.
+  * Preprocessing & Seeding subphase. Preprocess package
+  * Match-Merging subphase. Textsim package.
+  * Filterin subphase. PAN/P4P corpus experiments.
+- Spanish Pipeline, Resources & Software.
+  * QtNLP-WordNet application. Spanish Results.
+- Spanish Corpus TNLP
+- Results in Spanish Text Reuse Detection
+
+---
+
 ## Plagiarism Detection Roadmap
 
 --
@@ -41,9 +56,9 @@ ________________________
 
 > “The act of taking the writings of another person and passing them off as one’s own, generally in violation of copyright laws.”
 
-- Source code plagiarism has been studied before the '80s. 
+- Source code plagiarism has been studied before the '80s.
 ##### (Parker1989) Internet upgraded that problem!
-- Natural languague texts are the most plagiarised archieves 
+- Natural languague texts are the most plagiarised archieves.
 ##### (85% of Internet available texts).
 
 --
@@ -67,18 +82,21 @@ ________________________
 
 ---
 
-### Plagiarism have two parts
+### Plagiarism has two parts
 
-- Text Reuse Detection
-- [Citation Analysis](#/3/1)
+- Text Reuse Detection (click [→]())
+- [Citation Analysis](#/3/1) (*click [↓]() for a summary*)
 ### 
-#### The objetive of this investigation is [Text Reuse Detection](#/4/1)
+#### This investigation is about [Text Reuse Detection →](#/4/1)
 
 --
 
 ### Citation Analysis
 
->“The evaluation of document structure that correspond to citation styles”
+>“The bibliometrics research area that deal with the study of citations: the relationship between a part/whole cited doc and a part/whole of the citing doc.”
+
+##### Linda C. Smith (1981). *Citation Analysis*. Report at University of Illinois.
+##### Morton V. Malin (1968). *The Science Citation Index: A New Concept in Indexing*. Library Trends 16 (Jan. 1968):376.
 
 ---
 
@@ -102,6 +120,9 @@ python setup.py install
 ```python
 for i in range(x):
     print (sqrt(i))
+while (i > 0):
+    if A == B:
+        return True
 ```
 
 ---
