@@ -1,3 +1,4 @@
+@import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
@@ -15,8 +16,8 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
-  font-size: 38px;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
   font-weight: normal;
   color: #222; }
 
@@ -35,8 +36,8 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: 'Source Sans Pro', Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: 'League Gothic', Impact, sans-serif;
+  font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;

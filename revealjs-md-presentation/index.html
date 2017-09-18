@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="css/reveal.css">
         <!--- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
-        <link rel="stylesheet" href="css/theme/league.css" id="theme">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
 
         <link rel="stylesheet" href="css/custom.css">
 
@@ -64,7 +64,7 @@
                 progress: true,
                 history: true,
                 center: true,
-                theme: 'night',
+                theme: 'white',
                 mouseWheel: true,
                 viewDistance: 3,
 
@@ -75,7 +75,7 @@
                     { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
                     { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                     { src: 'plugin/zoom-js/zoom.js', async: true },
                     { src: 'plugin/notes/notes.js', async: true }
                 ]

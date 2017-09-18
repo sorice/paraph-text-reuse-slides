@@ -63,7 +63,7 @@ ________________________
 
 --
 
-### Basic Problem of Plagiarism
+### Basic Problem of Plagiarism (cont)
 
 - A third of Turnitin.com papers have significant levels of plagiarism.
 ##### 40 million papers in accordance with Jon Barrie (founder of Turnitin) 2010 report.
@@ -74,20 +74,43 @@ ________________________
 
 ### Types of Plagiarism
 
+- Copy & Paste Plagiarism
+- [Paraphrase Plagiarism]()
+- Cross-Lingual Plagiarism
+- Idea Plagiarism
+- Self Plagiarism
+### 
+##### El Thair et al. *Survey of Plagiarism Detection Methods* (2011).
+##### Meuschke, N. & Gipp, B. *State-of-the-art in detecting academic plagiarism* (2013).
+
 --
 
 ### Paraphrase Plagiarism Recognition
 
 #### [An open issue in computer science?]()
 
+--
+
+### 2011 PAN statistics
+
+##### Results of plagiarism methods competition by types
+
+Other types | Autolow | Manual
+------|-------
+![](../imgs/PAN_2011_D_recall-non_paraphrase_plagiarism_detection_results.jpg) | ![](../imgs/PAN_2011_B_recall-auto-low_paraphrase_plagiarism_detection_results.jpg) | ![](../imgs/PAN_2011_A_recall-manual_paraphrase_plagiarism_detection_results.jpg)
+
+#### Recall in Auto-High paraphrase plagiarism detection is under 0.1.
+
+#### [Paraphrase plagiarism]() detection overall is [less]() than [40%]().
+
 ---
 
 ### Plagiarism has two parts
 
 - Text Reuse Detection (click [→]())
-- [Citation Analysis](#/3/1) (*click [↓]() for a summary*)
+- [Citation Analysis](#/4/1) (*click [↓]() for a summary*)
 ### 
-#### This investigation is about [Text Reuse Detection →](#/4/1)
+#### This investigation is about [Text Reuse Detection →](#/5/1)
 
 --
 
@@ -108,10 +131,50 @@ ________________________
 --
 
 ### Types of Text Reuse
+##### Barrón-Cedeño, Alberto (2012). *On the Mono- and Cross-Language Detection of Text Re-Use and Plagiarism*. PhD Thesis.
+### 
 
-```
-python setup.py install
-```
+- Word for word reuse
+- [Paraphrasing]()
+- Translated re-use
+- Re-use of ideas
+- Re-use of source code
+
+### 
+#### This investigation is about [Paraphrase Text Reuse Detection →](#/6/1)
+#### [Text Reuse Detection Flow](#/5/2) (*click [↓]()*)
+
+--
+
+### Text Reuse Detection Flow
+
+--
+
+![](../doc/Plagiarism_detection_phases.jpg)
+
+--
+
+### Corpus of Text Reuse
+
+#### Also called Plagiarism Corpus
+
+- PAN
+- P4P
+- Wikipedia Plagiarism Short Answers
+
+--
+
+### Research Groups
+
+- 
+
+---
+
+### Paraphrase Text Reuse Detection
+
+--
+
+### Paraphrase Complexity
 
 ---
 
@@ -124,17 +187,3 @@ while (i > 0):
     if A == B:
         return True
 ```
-
----
-
-### 2011 PAN statistics
-
-##### Results of plagiarism methods competition by types
-
-Other types | Autolow | Manual
-------|-------
-![](../imgs/PAN_2011_D_recall-non_paraphrase_plagiarism_detection_results.jpg) | ![](../imgs/PAN_2011_B_recall-auto-low_paraphrase_plagiarism_detection_results.jpg) | ![](../imgs/PAN_2011_A_recall-manual_paraphrase_plagiarism_detection_results.jpg)
-
-#### Recall in Auto-High paraphrase plagiarism detection is under 0.1.
-
-#### [Paraphrase plagiarism]() detection overall is [less]() than [40%]().
