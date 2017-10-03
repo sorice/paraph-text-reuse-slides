@@ -103,6 +103,23 @@ Other types | Autolow | Manual
 
 #### [Paraphrase plagiarism]() detection overall is [less]() than [40%]().
 
+--
+
+### 2014 PAN statistics
+
+##### (TODO, pending)
+
+--
+
+### Plagiarism Detection Software
+
+#### Main tools that detect plagiarism
+
+- TurnitIn
+- WCopyfind
+- Sherlock
+- SeeSources.com
+
 ---
 
 ### Plagiarism has two parts
@@ -126,13 +143,11 @@ Other types | Autolow | Manual
 ## Text Reuse Detection
 
 >“the situation in which pre-existing written material is consciously used again during the creation of a new text or version”
-####(Clough, 2010)
+#### Measuring text reuse in the news industry (Clough, 2010)
 
 --
 
 ### Types of Text Reuse
-##### Barrón-Cedeño, Alberto (2012). *On the Mono- and Cross-Language Detection of Text Re-Use and Plagiarism*. PhD Thesis.
-### 
 
 - Word for word reuse
 - [Paraphrasing]()
@@ -141,12 +156,16 @@ Other types | Autolow | Manual
 - Re-use of source code
 
 ### 
+###### On the Mono- and Cross-Language Detection of Text Re-Use and Plagiarism (Barrón-Cedeño, 2012).
+
+### 
 #### This investigation is about [Paraphrase Text Reuse Detection →](#/6/1)
 #### [Text Reuse Detection Flow](#/5/2) (*click [↓]()*)
 
 --
 
 ### Text Reuse Detection Flow
+##### Strategies for retrieving plagiarized documents (Stein, 2007)
 
 --
 
@@ -158,9 +177,10 @@ Other types | Autolow | Manual
 
 #### Also called Plagiarism Corpus
 
-- PAN
+- PAN-PC
 - P4P
 - Wikipedia Plagiarism Short Answers
+- METER
 
 --
 
@@ -170,11 +190,44 @@ Other types | Autolow | Manual
 
 ---
 
-### Paraphrase Text Reuse Detection
+### Paraphrased Text Reuse Detection
+
+>“Paraphrase: those language expressions different in form but expressing (approximately) the same meaningn”
+
+##### *Relational paraphrase acquisition from Wikipedia: The WRPA method and corpus*. Vila (2013)
 
 --
 
+### Paraphrase Text Aligment Approaches
+
+#### Best algorithms for Paraphrased Text Reuse has three parts in the Text Alignment subprocess.
+- [Seeding](#/6/2)
+- [Extension](#/6/3)
+- [Filtering](#/6/4)
+### 
+
+#### This investigation propouse notes in:
+- [Text Alignment Subprocess →](#/6/1)
+### 
+##### The phase "Detailed Analysis" was redifined in 2013 as "Text Alignment".
+###### Overview of the 5th International Competition on Plagiarism Detection (Potthast, 2013)
+
+
+--
 ### Paraphrase Complexity
+
+#### Paraphrase phenomenon have been described. Here some examples of typologies.
+
+- **Morphology - based changes**: Inflections, modal verb & derivational changes.
+- **Lexicon - based changes**: Spelling, same polarity, synthetic & analitic sustitutions.
+- **Syntax - based changes**: Negation, ellipsis, etc.
+- **Discourse - based changes**: Punctuation & format changes, styles alternation, etc.
+- **Miscellaneous - based changes**: Discourse structures & order changes. Addition & deletion.
+- **Semantic - based changes**: Imply a different lexicalisation of the same content unit.
+
+---
+
+
 
 ---
 
