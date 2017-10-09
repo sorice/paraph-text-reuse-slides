@@ -40,7 +40,7 @@ ________________________
 - TRD Detailed Analysis Phase. Similarity distances.
   * Preprocessing & Seeding subphase. Preprocess package
   * Match-Merging subphase. Textsim package.
-  * Filterin subphase. PAN/P4P corpus experiments.
+  * Filtering subphase. PAN/P4P corpus experiments.
 - Spanish Pipeline, Resources & Software.
   * QtNLP-WordNet application. Spanish Results.
 - Spanish Corpus TNLP
@@ -192,13 +192,13 @@ Other types | Autolow | Manual
 
 ### Paraphrased Text Reuse Detection
 
->“Paraphrase: those language expressions different in form but expressing (approximately) the same meaningn”
+>“Paraphrase: those language expressions different in form but expressing (approximately) the same meaning”
 
 ##### *Relational paraphrase acquisition from Wikipedia: The WRPA method and corpus*. Vila (2013)
 
 --
 
-### Paraphrase Text Aligment Approaches
+### Paraphrase Text Alignment Approaches
 
 #### Best algorithms for Paraphrased Text Reuse has three parts in the Text Alignment subprocess.
 - [Seeding](#/6/2)
@@ -206,17 +206,16 @@ Other types | Autolow | Manual
 - [Filtering](#/6/4)
 ### 
 
-#### This investigation propouse notes in:
-- [Text Alignment Subprocess →](#/6/1)
+#### This investigation proposes notes in: [Text Alignment Subprocess →](#/6/1)
 ### 
-##### The phase "Detailed Analysis" was redifined in 2013 as "Text Alignment".
+##### The phase "Detailed Analysis" was redefined in 2013 as "Text Alignment".
 ###### Overview of the 5th International Competition on Plagiarism Detection (Potthast, 2013)
-
+#### more about [Paraphrase](#/6/3) (*click [↓](#/6/3)*)
 
 --
 ### Paraphrase Complexity
 
-#### Paraphrase phenomenon have been described. Here some examples of typologies.
+#### Paraphrase phenomenon has been described. Here are some examples of typologies.
 
 - **Morphology - based changes**: Inflections, modal verb & derivational changes.
 - **Lexicon - based changes**: Spelling, same polarity, synthetic & analitic sustitutions.
@@ -227,7 +226,7 @@ Other types | Autolow | Manual
 
 ---
 
-
+## Text Alignment in Text Reuse Detection
 
 ---
 
