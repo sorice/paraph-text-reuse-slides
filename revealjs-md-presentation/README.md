@@ -2,20 +2,20 @@
 
 ## Paraphrase Text Reuse Detection
 
-#### [Research on Spanish Computing Monolingual Corpora](http://meneses-abad.com/scmc)
+##### [Research on Spanish Computing Monolingual Corpora](http://menesesabad.com/scmc)
 
-###### [Abel Meneses-Abad](http://www.linkedin.com/in/abelma1980) / [@abelma1980](https://twitter.com/abelma1980?lang=es)
+###### [Abel Meneses-Abad](https://www.linkedin.com/in/abel-abel-meneses-abad-1450ba3a/) / [@abelma1980](https://twitter.com/abelma1980?lang=es)
 ###### [Universidad de Camagüey](http://uc.edu.cu) / [Universidad Central Marta Abreu de Las Villas](http://uclv.edu.cu)
 ________________________
 
-##### Slides to Present in [Ph.D. sessions](http://www.meetup.com/PyThess/), August 30, 2017
+##### Slides to Present in [Ph.D. sessions](), August 30, 2017
 
 ##### Thesis directors: [Julio Madera Quintana](http://uc.edu.cu/juliom) / [Alberto Barrón-Cedeño](http://alt.qcri.org/)
 
 ##### Collaborator: [Leonel Salazar](http://debianhlg.cubava.cu/)
 ________________________
 
-###### Get them: [source code](https://github.com/sorice/paraphrase-presentation)
+###### Get them: [source code](https://github.com/sorice/paraph-text-reuse-slides)
 
 ###### Under [Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) License.
 
@@ -190,7 +190,7 @@ Other types | Autolow | Manual
 
 ---
 
-### Paraphrased Text Reuse Detection
+### Paraphrase Text Reuse Detection
 
 >“Paraphrase: those language expressions different in form but expressing (approximately) the same meaning”
 
@@ -200,13 +200,13 @@ Other types | Autolow | Manual
 
 ### Paraphrase Text Alignment Approaches
 
-#### Best algorithms for Paraphrased Text Reuse has three parts in the Text Alignment subprocess.
-- [Seeding](#/6/2)
-- [Extension](#/6/3)
-- [Filtering](#/6/4)
+#### Best algorithms for Paraphrase Text Reuse has three parts in the Text Alignment subprocess.
+- [Seeding](#/7/2)
+- [Extension](#/7/3)
+- [Filtering](#/7/4)
 ### 
 
-#### This investigation proposes notes in: [Text Alignment Subprocess →](#/6/1)
+#### This investigation proposes notes in: [Text Alignment Subprocess →](#/7/1)
 ### 
 ##### The phase "Detailed Analysis" was redefined in 2013 as "Text Alignment".
 ###### Overview of the 5th International Competition on Plagiarism Detection (Potthast, 2013)
@@ -228,14 +228,72 @@ Other types | Autolow | Manual
 
 ## Text Alignment in Text Reuse Detection
 
+>“Text Alignment: TODO”
+
+##### *Artículo X*. Author (Year)
+
+##### Proposals of this investigation (*click [↓](#/7/2)*)
+
+--
+
+## Seeding Phase Results
+
+**seed**: sentence pairs
+
+#### **Article**: Influence of text preprocessing in sentence Paraphrase Detection.
+
+###### **Data**: SEMEVAL corpus
+
+#### **Software**: python-preprocess package
+
+Shallow and deep preprocessing techniques.
+
+--
+
+## Extension Phase Results
+
+**approach**: rule based & clustering
+
+#### **Article**: Clustering approaches for Extension phase in Text Alignment
+
+###### **Data**: PAN-PC-2012, 2013
+
+#### **Article**: Semantic Textual Similarity using combined grammatical measures
+
+###### **Data**: SEMEVAL 2018
+
+#### **Software**: python-textsim package
+
+##### String, Token, Corpus, Knowledge and combined text similarity distances.
+
+#### **Algorithm**: match-merging heuristic rule-based & clustering combined
+
+--
+
+## Corpus Construction
+
+#### **Corpus**: TNLP
+
+Corpus of Paraphrased Short Texts
+
+#### **Article**: Spanish Corpus for Paraphrase Similarity and Text Re-Use Detection
+
+#### **Software**: QtNLP-Linguist
+
+Front-End for similar-text-based corpus creation.
+
+--
+
+## Spanish Experiments
+
+#### **Article**: Text-Reuse report in the University of Camagüey
+
+###### **Data**: Thesis repository of the University of Camagüey
+
 ---
 
-### Pretty Code
+## Results
 
-```python
-for i in range(x):
-    print (sqrt(i))
-while (i > 0):
-    if A == B:
-        return True
-```
+---
+
+## Conclusions

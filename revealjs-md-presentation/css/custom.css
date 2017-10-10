@@ -44,6 +44,10 @@
   margin-bottom: 40px;
 }
 
+.reveal h4 {
+  text-align: left
+}
+
 .reveal h6 {
   font-size: 20px;
   margin-bottom: 4px;
